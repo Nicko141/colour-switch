@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -20,8 +21,11 @@ public class Player : MonoBehaviour
     public bool startGame;
     public GameObject controlsPanel;
     public GameObject deathPanel;
+    public GameObject pasuePanel;
     public int currentY;
     public int highestY;
+    public TMP_Text currentYscore;
+    public TMP_Text highestYscore;
    
 
     private Vector2 movement;
@@ -33,7 +37,7 @@ public class Player : MonoBehaviour
         startGame = false;
         rigid.bodyType = RigidbodyType2D.Kinematic;
         SetRandomcolor();
-        highestY = 0;
+        Saving.Load();
     }
 
     void Update()
@@ -45,21 +49,49 @@ public class Player : MonoBehaviour
                 rigid.bodyType = RigidbodyType2D.Dynamic;
                 startGame = true;
                 controlsPanel.SetActive(false);
+                Time.timeScale = 1;
             }
             
         }
         movement.x = Input.GetAxisRaw("Horizontal") * moveForce;
         currentY = (int)this.transform.position.y;
+        currentYscore.text = "Current Y = " + currentY.ToString();
+        highestYscore.text = "Highest Y = " + highestY.ToString();
         if (currentY > highestY)
         {
             highestY = currentY;
+            Saving.Save();
+            
         }
         if (currentY <= highestY -5)
         {
             deathPanel.SetActive(true);
             Time.timeScale = 0;
         }
+        if (Input.GetButtonDown("Cancel"))
+        {
+            if (pasuePanel.activeSelf == false)
+            {
+                pauseScreen();
+            }
+            else if (pasuePanel.activeSelf == true)
+            {
+                resumeGame();
+            }
+        }
 
+
+    }
+    public void pauseScreen()
+    {
+        pasuePanel.SetActive(true);
+        Time.timeScale = 0;
+        
+    }
+    public void resumeGame()
+    {
+        pasuePanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     private void FixedUpdate()
