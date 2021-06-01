@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public SpriteRenderer spriteRend;
     public Color cyan, yellow, pink, purple;
     public GameObject menuShiz;
+    public GameObject cam;
     [Header("Value Variables")]
     [Range(5,15)]
         public float jumpForce = 10f;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     public GameObject pasuePanel;
     public int currentY;
     public int highestY;
+    public int camY;
     public TMP_Text currentYscore;
     public TMP_Text highestYscore;
    
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
         }
         movement.x = Input.GetAxisRaw("Horizontal") * moveForce;
         currentY = (int)this.transform.position.y;
+        camY = (int)cam.transform.position.y;
         currentYscore.text = "Current Y = " + currentY.ToString();
         highestYscore.text = "Highest Y = " + highestY.ToString();
         if (currentY > highestY)
@@ -63,7 +66,7 @@ public class Player : MonoBehaviour
             Saving.Save();
             
         }
-        if (currentY <= highestY -5)
+        if (currentY <= camY -5)
         {
             deathPanel.SetActive(true);
             Time.timeScale = 0;

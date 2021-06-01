@@ -710,7 +710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448211276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1901.4518, y: 1025.8975, z: -139.44887}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1252,6 +1252,7 @@ MonoBehaviour:
   pink: {r: 1, g: 0, b: 0.5019608, a: 1}
   purple: {r: 0.7372549, g: 0.07450981, b: 0.9843137, a: 1}
   menuShiz: {fileID: 0}
+  cam: {fileID: 963194225}
   jumpForce: 7
   moveForce: 2
   currentColor: 
@@ -1261,6 +1262,7 @@ MonoBehaviour:
   pasuePanel: {fileID: 1708439062}
   currentY: 0
   highestY: 0
+  camY: 0
   currentYscore: {fileID: 497661607}
   highestYscore: {fileID: 1999187026}
 --- !u!50 &966984001
