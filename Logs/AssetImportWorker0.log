@@ -1346,3 +1346,66 @@ Received Import Request.
 Start importing Assets/Audio/Nightcore - I Am The Doctor (Dubstep).mp3 using Guid(2e12d3abf5b58084096a63798a092f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa020e5dcd23ecf4bf8c1cd9b9894ace') in 0.234842 seconds
   Import took 0.237273 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 256.272533 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91144a7964b9890dd5cbe5b45c90588') in 0.018449 seconds
+  Import took 0.021264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000716 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91144a7964b9890dd5cbe5b45c90588') in 0.019074 seconds
+  Import took 0.021258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.309405 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a498d881eea59fb8a9d0900385a915da') in 0.018414 seconds
+  Import took 0.020568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000918 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a498d881eea59fb8a9d0900385a915da') in 0.018444 seconds
+  Import took 0.020776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 225.598388 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a794bbc953e117117a993d3e333017') in 0.024948 seconds
+  Import took 0.026933 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.672 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.3 MB.
+System memory in use after: 63.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1678.
+Total: 1.865400 ms (FindLiveObjects: 0.408100 ms CreateObjectMapping: 0.071500 ms MarkObjects: 1.374000 ms  DeleteObjects: 0.010400 ms)
+
