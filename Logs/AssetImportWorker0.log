@@ -1252,3 +1252,97 @@ System memory in use after: 59.9 MB.
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1663.
 Total: 1.749100 ms (FindLiveObjects: 0.324200 ms CreateObjectMapping: 0.063100 ms MarkObjects: 1.306200 ms  DeleteObjects: 0.053500 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000665 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.703 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.9 MB.
+System memory in use after: 60.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1665.
+Total: 1.502000 ms (FindLiveObjects: 0.146400 ms CreateObjectMapping: 0.032000 ms MarkObjects: 1.311600 ms  DeleteObjects: 0.011000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000649 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.710 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.1 MB.
+System memory in use after: 60.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1667.
+Total: 1.607800 ms (FindLiveObjects: 0.232800 ms CreateObjectMapping: 0.038600 ms MarkObjects: 1.321400 ms  DeleteObjects: 0.013600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1584.539949 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6e520b92ccfc61bcfa21a7bcab8468') in 0.028875 seconds
+  Import took 0.030648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.227240 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6e520b92ccfc61bcfa21a7bcab8468') in 0.030453 seconds
+  Import took 0.032571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.464456 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(bc7cdeac7e725f744bd5d7d023581bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio using Guid(bc7cdeac7e725f744bd5d7d023581bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301773200d2d3ee7b5a72652996f5171') in 0.015967 seconds
+  Import took 0.017794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.842199 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3395ceb9c47b47ae76cc7615f8ba7fc') in 0.026889 seconds
+  Import took 0.028921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 147.865188 seconds.
+  path: Assets/Audio/MasterController.mixer
+  artifactKey: Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MasterController.mixer using Guid(eacefa5a3bcccf5479b44f0615b5c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6663c15b3326c5923dc85330bc6eccfb') in 0.023126 seconds
+  Import took 0.024928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.043263 seconds.
+  path: Assets/Audio/Nightcore - I Am The Doctor (Dubstep).mp3
+  artifactKey: Guid(2e12d3abf5b58084096a63798a092f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Nightcore - I Am The Doctor (Dubstep).mp3 using Guid(2e12d3abf5b58084096a63798a092f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa020e5dcd23ecf4bf8c1cd9b9894ace') in 0.234842 seconds
+  Import took 0.237273 seconds .
+

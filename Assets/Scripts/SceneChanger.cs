@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class SceneChanger : MonoBehaviour
 {
-    
+    public AudioMixer MasterAudio;   
+
+    public void ChangeVolume(float volume)
+    {
+        MasterAudio.SetFloat("Volume", volume);
+    }
     // Start is called before the first frame update
     void Start()
     {
