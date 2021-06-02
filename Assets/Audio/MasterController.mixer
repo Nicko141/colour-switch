@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-6196905894365235875
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 9989cb40a6936f847a1d3c93d41c2df5
+  m_EffectName: Attenuation
+  m_MixLevel: bb0f8d855a1d3be43bf4d146f730e40a
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-2918896742740559065
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: af6e51b9b90f3d84e8ac3c4d3f7d5c33
+  m_EffectName: Attenuation
+  m_MixLevel: 4c58090b1189866489f42421abcf3ad5
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-967207910149838881
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -35,6 +63,10 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: 1a0ea7d6c6f612b4eb1fca45dc3cc984
+    name: Death
+  - guid: 9bbd37bbac3743e4987f9dc1e057b649
+    name: Jump
   - guid: 4f01b986553ed4c47a88d1b0e1e4987b
     name: MyExposedParam
   - guid: b46c7ee9f810a744a82c7faed1d3b830
@@ -43,6 +75,8 @@ AudioMixerController:
   - guids:
     - 19cf87b06b335424a88a2e27358e7c26
     - 1721788ebfdef3b4f9982be730c7b18b
+    - 3953425f577963a43914e10e6701f828
+    - f1ad5717ad2d000439ef4f25c495aa15
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -57,6 +91,8 @@ AudioMixerGroupController:
   m_GroupID: 19cf87b06b335424a88a2e27358e7c26
   m_Children:
   - {fileID: -967207910149838881}
+  - {fileID: 4214040489680257772}
+  - {fileID: 5313429535039164465}
   m_Volume: 4f01b986553ed4c47a88d1b0e1e4987b
   m_Pitch: 8ac1954b62a97f141b33bfb6bec28cae
   m_Send: 00000000000000000000000000000000
@@ -89,8 +125,47 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 1cce85f01fbb377428d9c4445b1654e7
-  m_FloatValues: {}
+  m_FloatValues:
+    1a0ea7d6c6f612b4eb1fca45dc3cc984: 0
   m_TransitionOverrides: {}
+--- !u!243 &4214040489680257772
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jump
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3953425f577963a43914e10e6701f828
+  m_Children: []
+  m_Volume: 9bbd37bbac3743e4987f9dc1e057b649
+  m_Pitch: 44a9d7996fc15ad4694eea270d7c0aa0
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2918896742740559065}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &5313429535039164465
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Death
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f1ad5717ad2d000439ef4f25c495aa15
+  m_Children: []
+  m_Volume: 1a0ea7d6c6f612b4eb1fca45dc3cc984
+  m_Pitch: 38fc96c681b6f3d46814694031e795be
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -6196905894365235875}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &5342243973230108098
 AudioMixerEffectController:
   m_ObjectHideFlags: 3

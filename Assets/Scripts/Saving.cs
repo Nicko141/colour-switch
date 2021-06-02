@@ -8,17 +8,11 @@ public class Saving : MonoBehaviour
 
     private void Awake()
     {
-        chameleon = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        if (!PlayerPrefs.HasKey("Loaded"))
+        chameleon = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();//find player and add the pplayer script if not already attached
+        if (chameleon.highestY <= 0)
         {
-            PlayerPrefs.DeleteAll();
-            //first load function... set up character data
-            FirstLoad();
-            //save data... makes first save file in binary
-            Save();
-            //now have 1st save file
-            PlayerPrefs.SetInt("Loaded", 0);
 
+            FirstLoad();
         }
         else
         {
@@ -30,12 +24,12 @@ public class Saving : MonoBehaviour
         chameleon.highestY = 0;
 
     }
-    public static void Save()
+    public static void Save()//save the data
     {
         //do when binary is done
         Binary.SaveData(chameleon);
     }
-    public static void Load()
+    public static void Load()//loads the data
     {
         //do when binary is done
         Data data = Binary.LoadData(chameleon);

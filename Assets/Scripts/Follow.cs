@@ -9,7 +9,7 @@ public class Follow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (player.position.y > this.transform.position.y)
+        if (player.position.y > this.transform.position.y)//follow the player's y axis
         {
             this.transform.position = new Vector3(this.transform.position.x,player.position.y, this.transform.position.z);
         }
