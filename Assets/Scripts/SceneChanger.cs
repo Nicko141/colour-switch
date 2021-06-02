@@ -33,13 +33,13 @@ public class SceneChanger : MonoBehaviour
 
     
     
-    public void onJump()
+    public void onJump()//play audio on jump
     {
         jumper.Play();
     }
     
     // Start is called before the first frame update
-    void Start()
+    void Start()//retrieve saved playerprefs for audio
     {
         MasterAudio.SetFloat("Volume", PlayerPrefs.GetFloat("Volume"));
         MasterAudio.SetFloat("Jump", PlayerPrefs.GetFloat("Jump"));
@@ -48,7 +48,7 @@ public class SceneChanger : MonoBehaviour
     }
     public void deadPerson()
     {
-        MasterAudio.SetFloat("Volume", -80);
+        MasterAudio.SetFloat("Volume", -80);//set music to lowest setting/mute on death
     }
 
     // Update is called once per frame

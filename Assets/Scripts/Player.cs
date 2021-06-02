@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
                 resumeGame();
             }
         }
-        if (deathPanel.activeSelf == true)
+        if (deathPanel.activeSelf == true)//if the death panel is active run the function
         {
             Debug.Log("Running");
             deadPlayer();
