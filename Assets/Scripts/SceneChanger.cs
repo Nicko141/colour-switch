@@ -11,12 +11,7 @@ public class SceneChanger : MonoBehaviour
     public AudioSource jumper;
     public Slider music;
 
-    private void Awake()
-    {
-
-
-
-    }
+   
     
 
 

@@ -89,15 +89,15 @@ public class Player : MonoBehaviour
         }
         if (deathPanel.activeSelf == true)//if the death panel is active run the function
         {
-            Debug.Log("Running");
+           
             deadPlayer();
         }
 
 
     }
-    public void deadPlayer()
+    public void deadPlayer()//play sound clip when function is run
     {
-        Debug.Log("Sprinting");
+        
         deadMan.PlayOneShot(deed);
         scenechanger.deadPerson();
     }
@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        this.GetComponent<Animator>().SetTrigger("collided");
+        this.GetComponent<Animator>().SetTrigger("collided");//animation starts when player collides with platform
         SetRandomcolor();//when the player collides with the platform it changes colour
         
         rigid.velocity = Vector2.up * jumpForce;//when the player collides with the platform it bounces
