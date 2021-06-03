@@ -123,12 +123,13 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        
-            SetRandomcolor();//when the player collides with the platform it changes colour
+        this.GetComponent<Animator>().SetTrigger("collided");
+        SetRandomcolor();//when the player collides with the platform it changes colour
         
         rigid.velocity = Vector2.up * jumpForce;//when the player collides with the platform it bounces
 
         scenechanger.onJump();
+        
 
     }
     void SetRandomcolor()//sets a random colour
