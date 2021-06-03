@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
             if (pasuePanel.activeSelf == false && deathPanel.activeSelf == false)
             {
                 pauseScreen();
-                deadPlayer();
+                
             }
             else if (pasuePanel.activeSelf == true)
             {
